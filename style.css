@@ -39,11 +39,7 @@ p {
   text-transform: capitalize;
 }
 
-.description h5 {
+.description h1 {
   color: teal;
 }
 
-body {
- background-image: url("paper.gif");
- background-color: #cccccc;
-}
