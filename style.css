@@ -42,3 +42,8 @@ p {
 .description h5 {
   color: teal;
 }
+
+body {
+ background-image: url("paper.gif");
+ background-color: #cccccc;
+}
