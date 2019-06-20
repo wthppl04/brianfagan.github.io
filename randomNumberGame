@@ -1,0 +1,48 @@
+package ProgrammingThree;
+import java.util.*;
+public class ProgrammingThree {
+
+	
+
+		public static void main(String[] args) {
+			
+			int number = (int)(Math.random() * 10000 + 1);
+			int numGuessed = 1;
+			int min = 1;
+			int max = 10000;
+			int guess=0;
+			
+			Scanner input = new Scanner(System.in);
+			System.out.println("Please enter a number between 1 and 10000");
+			guess = input.nextInt();
+	
+			while (number != guess)
+			{
+				numGuessed += 1;
+				if(guess > number)
+				{
+					max = guess - 1;
+					System.out.println("Too High! please enter a number between " + min + " and " + max + ".");
+					guess = input.nextInt();
+				}
+				else
+				{
+					min = guess + 1;
+					System.out.println("Too low!please enter a number between " + min + " and " + max + ".");
+					guess = input.nextInt();
+				}
+			}
+			if (numGuessed != 1)
+			{
+				System.out.println("Winner! It  you " + numGuessed + " guesses!");
+				
+			}
+			else
+			{
+				System.out.println("Winner! It took you 1 guess!");
+			}
+
+		}
+
+	}
+
