@@ -1,0 +1,34 @@
+
+public class ProgramFive{
+	public static void main(String[] args) {
+		
+		Scanner in= new Scanner(System.in);
+	
+		char[][] myArray = new char[6][7];
+		System.out.println("Enter a sentence");
+		String input=in.nextLine();
+		char[] stringToCharArray=input.toCharArray();
+		//System.out.println(Arrays.toString(stringToCharArray));
+		int count=0;
+	    for (int i = 0; i<6; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (count < stringToCharArray.length) {
+                    myArray[i][j] = stringToCharArray[count];
+                    count++;
+                } else {
+                    myArray[i][j] = '*';
+                }
+                //System.out.print(myArray[6][7] + " ");
+            }
+        }
+	    for (int j = 0; j< 7; j++) {
+	     for (int i = 0; i < 6; i++) {
+	            
+	                System.out.print(myArray[i][j] + " ");
+	            }
+
+	        }
+	    //System.out.println(Arrays.deepToString(myArray));
+		
+	}
+}
